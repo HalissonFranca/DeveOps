@@ -28,7 +28,7 @@ jobs:
       # 3. Roda o build e os testes.
       - name: Build e Testes com Maven
         run: mvn -B verify
-    
+  #Segundo Job
   build-and-push-docker:
     name: Construir e Publicar Imagem Docker
     runs-on: ubuntu-latest
@@ -50,5 +50,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/${{ github.repository }}:latest
+          tags: ghcr.io/halissonfranca/deveops:latest
 
